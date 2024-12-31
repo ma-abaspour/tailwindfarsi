@@ -120,7 +120,6 @@
         </div>
         <!-- End Right Side -->
 
-
         <!-- Start Left Side -->
         <div class="p-2 mt-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
           <div
@@ -131,7 +130,7 @@
                 <span class="text-3xl font-bold tracking-tight text-gray-900">830 هزار تومان*</span>
                 <span class="text-base line-through text-gray-700">2890 هزار تومان</span>
               </p>
-              <a tel="+989921236002" class="block w-full py-2 my-6 text-white rounded-sm bg-green-600">
+              <a src="tel:+989921236002" class="block w-full py-2 my-6 text-white rounded-sm bg-green-600">
                 برای خرید تماس بگیرید.
               </a>
               <p class="px-3 py-1 text-sm font-bold">
