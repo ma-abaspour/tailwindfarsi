@@ -41,32 +41,35 @@
     </div>
   </header>
 
+
   <!-- Hero section -->
-  <section class="bg-zinc-950 w-full min-h-screen" dir="rtl">
-    <div class="px-6 py-4 pb-20">
-      <section class="flex h-full flex-col items-center justify-center pt-20">
-        <div class="flex w-full max-w-2lg flex-col items-center justify-center text-center">
-          <h1 class="relative mb-4 text-4xl font-medium text-zinc-950 dark:text-zinc-50">
-            کیت رابط کاربری تیلویند فارسی
-          </h1>
-          <p class="text-center text-zinc-600 dark:text-zinc-200 nowrap">
-            راست‌چین. زیبایی و سادگی. کپی-پیست آسان. ساخته شده برای مهندسان و طراحان.
-          </p>
-        </div>
-        <span class="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
-          به‌روزرسانی‌های رایگان و اجزای جدید به طور منظم منتشر می‌شوند.
-        </span>
-        <div class="flex gap-4 mt-8">
-          <NuxtLink to="/sample" class="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
-            مشاهده نمونه ها
-          </NuxtLink>
-          <NuxtLink to="/buy" class="px-6 py-2 text-sm font-medium text-zinc-300 border border-zinc-700 rounded-lg hover:bg-zinc-900 transition-colors">
-            خرید
-          </NuxtLink>
-        </div>
-      </section>
-    </div>
-  </section>
+<section class="bg-zinc-950 w-full min-h-screen" dir="rtl">
+  <div class="px-6 py-4 pb-20">
+    <section class="flex h-full flex-col items-center justify-center pt-20">
+      <div class="flex w-full max-w-2lg flex-col items-center justify-center text-center">
+        <h1 class="relative mb-3 text-2xl sm:text-4xl font-medium text-zinc-950 dark:text-zinc-50">
+          کیت رابط کاربری تیلویند فارسی
+        </h1>
+        <p class="text-center text-xs sm:text-base text-zinc-600 dark:text-zinc-200 nowrap">
+          راست‌چین. زیبایی و سادگی. کپی-پیست آسان. ساخته شده برای مهندسان و طراحان.
+        </p>
+      </div>
+      <span class="mt-2 text-center text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+        به‌روزرسانی‌های رایگان و اجزای جدید به طور منظم منتشر می‌شوند.
+      </span>
+      <div class="flex gap-4 mt-6">
+        <NuxtLink to="/sample" class="px-5 py-2 text-xs sm:text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+          مشاهده نمونه ها
+        </NuxtLink>
+        <NuxtLink to="/buy" class="px-5 py-2 text-xs sm:text-sm font-medium text-zinc-300 border border-zinc-700 rounded-lg hover:bg-zinc-900 transition-colors">
+          خرید
+        </NuxtLink>
+      </div>
+    </section>
+  </div>
+</section>
+
+
 
   <!-- <div class="bg-zinc-950 w-full" dir="rtl">
     <div class="max-w-md mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
