@@ -32,7 +32,7 @@
       </div>
 
       <!-- Logo and brand -->
-      <NuxtLink href="/docs" class="relative flex items-center">
+      <NuxtLink to="/" class="relative flex items-center">
         <span
           class="mb-4 mr-2 select-none rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-medium text-zinc-50">beta</span>
         <div class="text-sm font-medium text-zinc-950 dark:text-white">تیلویند فارسی</div>
@@ -47,7 +47,7 @@
       <section class="flex h-full flex-col items-center justify-center pt-20">
         <div class="flex w-full max-w-2lg flex-col items-center justify-center text-center">
           <h1 class="relative mb-4 text-4xl font-medium text-zinc-950 dark:text-zinc-50">
-            کیت رابط کاربری تیلویند فارسی.
+            کیت رابط کاربری تیلویند فارسی
           </h1>
           <p class="text-center text-zinc-600 dark:text-zinc-200 nowrap">
             راست‌چین. زیبایی و سادگی. کپی-پیست آسان. ساخته شده برای مهندسان و طراحان.
@@ -57,9 +57,9 @@
           به‌روزرسانی‌های رایگان و اجزای جدید به طور منظم منتشر می‌شوند.
         </span>
         <div class="flex gap-4 mt-8">
-          <button class="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+          <NuxtLink to="/sample" class="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
             مشاهده نمونه ها
-          </button>
+          </NuxtLink>
           <NuxtLink to="/buy" class="px-6 py-2 text-sm font-medium text-zinc-300 border border-zinc-700 rounded-lg hover:bg-zinc-900 transition-colors">
             خرید
           </NuxtLink>
