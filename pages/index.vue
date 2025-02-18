@@ -10,16 +10,15 @@
   <header
     class="sticky top-0 z-10 flex h-16 items-center justify-center border-b border-zinc-200 bg-white px-6 py-5 dark:border-white/10 dark:bg-zinc-950">
     <div class="mx-auto flex w-full items-center justify-between md:max-w-7xl">
-      <!-- Logo and brand -->
-      <NuxtLink href="/docs" class="relative flex items-center space-x-2">
-        <MPLogo class="h-6 w-auto" />
-        <div class="text-sm font-medium text-zinc-950 dark:text-white">تیلویند فارسی</div>
-        <span
-          class="mb-4 ml-2 select-none rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-medium text-zinc-50">beta</span>
-      </NuxtLink>
-
       <!-- Navigation items -->
       <div class="flex items-center space-x-6">
+        <nav class="flex items-center space-x-2">
+          <Icon name="uil:user" style="color: white" />
+          <Icon name="uil:moon" style="color: white" />
+        </nav>
+
+        <div class="hidden h-8 w-[0.5px] bg-zinc-200 dark:bg-zinc-800 sm:flex" />
+
         <nav class="hidden items-center space-x-6 sm:flex">
           <NuxtLink v-for="(link, index) in [
             { href: '/blog', text: 'بلاگ' },
@@ -30,14 +29,15 @@
             {{ link.text }}
           </NuxtLink>
         </nav>
-
-        <div class="hidden h-8 w-[0.5px] bg-zinc-200 dark:bg-zinc-800 sm:flex" />
-
-        <nav class="flex items-center space-x-2">
-          <Icon name="uil:user" style="color: white" />
-          <Icon name="uil:moon" style="color: white" />
-        </nav>
       </div>
+
+      <!-- Logo and brand -->
+      <NuxtLink href="/docs" class="relative flex items-center">
+        <span
+          class="mb-4 mr-2 select-none rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-medium text-zinc-50">beta</span>
+        <div class="text-sm font-medium text-zinc-950 dark:text-white">تیلویند فارسی</div>
+        <MPLogo class="h-6 w-auto mr-2" />
+      </NuxtLink>
     </div>
   </header>
 
@@ -56,101 +56,17 @@
         <span class="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
           به‌روزرسانی‌های رایگان و اجزای جدید به طور منظم منتشر می‌شوند.
         </span>
+        <div class="flex gap-4 mt-8">
+          <button class="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+            مشاهده نمونه ها
+          </button>
+          <NuxtLink to="/buy" class="px-6 py-2 text-sm font-medium text-zinc-300 border border-zinc-700 rounded-lg hover:bg-zinc-900 transition-colors">
+            خرید
+          </NuxtLink>
+        </div>
       </section>
     </div>
-
-
-
-    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="bg-white rounded-2xl lg:flex lg:max-w-none">
-
-        <!-- Start Right Side -->
-        <div class="p-4 sm:p-8 lg:flex-auto">
-
-          <h3 class="text-2xl font-bold tracking-tight text-gray-700">پیش فروش ورژن بتا</h3>
-          <p class="pl-6 mt-4 space-y-2 text-lg text-gray-800">
-            با خرید این محصول، به مجموعه‌ای جامع و حرفه‌ای از ابزارهای طراحی دسترسی خواهید داشت که کار شما را سریع‌تر،
-            آسان‌تر و حرفه‌ای‌تر می‌کند.
-          </p>
-
-
-          <div class="mt-10 flex items-center gap-x-4">
-            <h4 class="flex-none text-sm font-semibold leading-6 text-blue-600">کیت تیلویند فارسی</h4>
-            <div class="h-px flex-auto bg-gray-100"></div>
-          </div>
-
-          <ul class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
-            <li class="flex items-center">
-              <svg class="text-green-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              پشتیبانی از طراحی ریسپانسیو و موبایل فرست
-            </li>
-            <li class="flex items-center">
-              <svg class="text-green-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              زبان فارسی و راست‌‌چین بودن کامل کامپوننت ها
-            </li>
-            <li class="flex items-center">
-              <svg class="text-green-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              دسترسی کامل به تمامی عناصر و قالب ها
-            </li>
-            <li class="flex items-center">
-              <svg class="text-green-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              جستجوی سریع و آسان عناصر
-            </li>
-            <li class="flex items-center">
-              <svg class="text-green-500 w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              دریافت به‌روزرسانی‌های رایگان
-            </li>
-          </ul>
-
-        </div>
-        <!-- End Right Side -->
-
-        <!-- Start Left Side -->
-        <div class="p-2 mt-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div
-            class="py-10 text-center rounded-2xl bg-gray-50/50 ring-1 ring-inset ring-gray-500/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <div class="max-w-xs px-8 mx-auto min-w-[300px]">
-              <p class="text-sm font-semibold text-gray-600">سالانه</p>
-              <p class="flex flex-col items-center justify-center mt-6 mb-12 gap-y-2">
-                <span class="text-3xl font-bold tracking-tight text-gray-900">830 هزار تومان*</span>
-                <span class="text-base line-through text-gray-700">2890 هزار تومان</span>
-              </p>
-              <a href="tel:+989921236002" class="block w-full py-2 my-6 text-white rounded-sm bg-green-600">
-                برای خرید تماس بگیرید.
-              </a>
-              <p class="px-3 py-1 text-sm font-bold">
-                این پیشنهاد ویژه تنها برای پیش‌فروش نسخه بتا ارائه می‌شود و با عرضه نسخه نهایی، قیمت به مقدار اصلی
-                بازخواهد گشت.
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Left Side -->
-
-      </div>
-    </section>
-
-
-
-
   </section>
-
 
   <!-- <div class="bg-zinc-950 w-full" dir="rtl">
     <div class="max-w-md mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
