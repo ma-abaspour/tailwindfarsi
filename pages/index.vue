@@ -44,7 +44,8 @@
 
   <!-- Hero section -->
 <section class="bg-zinc-950 w-full min-h-screen" dir="rtl">
-  <div class="px-6 py-4 pb-20">
+
+  <div class="px-6 py-4 ">
     <section class="flex h-full flex-col items-center justify-center pt-20">
       <div class="flex w-full max-w-2lg flex-col items-center justify-center text-center">
         <h1 class="relative mb-3 text-2xl sm:text-4xl font-medium text-zinc-950 dark:text-zinc-50">
@@ -67,37 +68,55 @@
       </div>
     </section>
   </div>
+
+
+  <!-- Under Development Section -->
+<section class="bg-zinc-950 w-full py-16 text-center" dir="rtl">
+  <div class="max-w-3xl mx-auto px-6">
+    
+    <!-- Animated Development Icon -->
+    <div class="relative mx-auto h-16 w-16 animate-pulse">
+      <svg class="text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    </div>
+
+    <!-- Section Heading -->
+    <h2 class="mt-4 text-xl sm:text-2xl font-semibold text-white">
+      ویژگی‌های جدید در راه است!
+    </h2>
+
+    <!-- Short Description -->
+    <p class="mt-2 text-sm text-zinc-400">
+      ما در حال کار روی ویژگی‌های جدید و بهبودهای بیشتر هستیم. به‌زودی جزئیات بیشتری منتشر خواهد شد!
+    </p>
+
+    <!-- Progress Bar -->
+    <div class="mt-5 mx-auto max-w-xs">
+      <div class="h-1 w-full overflow-hidden rounded-full bg-zinc-800">
+        <div class="h-full w-[3%] animate-pulse rounded-full bg-blue-500 transition-all duration-1000"></div>
+      </div>
+      <span class="mt-2 text-xs text-zinc-500 block">۳٪ تکمیل شده</span>
+    </div>
+
+    <!-- Action Button -->
+    <div class="mt-6">
+      <NuxtLink to="/updates" 
+                class="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700">
+        مشاهده به‌روزرسانی‌ها
+      </NuxtLink>
+    </div>
+
+  </div>
+</section>
+
+
 </section>
 
 
 
-  <!-- <div class="bg-zinc-950 w-full" dir="rtl">
-    <div class="max-w-md mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-
-      <h2 class="text-2xl font-bold tracking-tight text-gray-400">Customers also purchased</h2>
-      <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-
-        <div class="group relative">
-          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg"
-            alt="Front of men&#039;s Basic Tee in black."
-            class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80">
-          <div class="mt-4 flex justify-between">
-            <div>
-              <h3 class="text-sm text-gray-200">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  انواع دیوایس ها
-                </a>
-              </h3>
-              <p class="mt-1 text-sm text-gray-500">Black</p>
-            </div>
-            <p class="text-sm font-medium text-gray-900">$35</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
+</template>
 
 
   <!-- <div
@@ -113,7 +132,3 @@
         class="hidden dark:block w-[272px] h-[572px]" alt="">
     </div>
   </div> -->
-
-
-
-</template>
