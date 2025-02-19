@@ -52,7 +52,7 @@
           کیت رابط کاربری تیلویند فارسی
         </h1>
         <p class="text-center text-xs sm:text-base text-zinc-600 dark:text-zinc-200 nowrap">
-          راست‌چین. زیبایی و سادگی. کپی-پیست آسان. ساخته شده برای مهندسان و طراحان.
+          راست‌چین. زیبایی و سادگی. کپی-پیست آسان. برای مهندسان و طراحان.
         </p>
       </div>
       <span class="mt-2 text-center text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
