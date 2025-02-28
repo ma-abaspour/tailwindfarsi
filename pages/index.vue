@@ -63,7 +63,7 @@
           مشاهده نمونه ها
         </NuxtLink>
         <NuxtLink to="/buy" class="px-5 py-2 text-xs sm:text-sm font-medium text-zinc-300 border border-zinc-700 rounded-lg hover:bg-zinc-900 transition-colors">
-          خرید
+          مشارکت
         </NuxtLink>
       </div>
     </section>

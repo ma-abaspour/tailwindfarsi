@@ -147,15 +147,6 @@
         </div>
       </div>
 
-      <!-- Call to Action -->
-      <div class="mt-16 flex justify-center">
-        <NuxtLink to="/buy" class="group inline-flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-500 hover:text-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 active:bg-blue-800">
-          <span>خرید کیت رابط کاربری</span>
-          <svg class="h-4 w-4 transition group-hover:-translate-x-1 rtl:group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </NuxtLink>
-      </div>
     </div>
   </div>
 </template>
