@@ -78,13 +78,4 @@ tailwindfarsi/
 
 این پروژه تحت مجوز MIT منتشر شده است.
 
-## پشتیبانی
 
-- [گزارش مشکل](https://github.com/ma-abaspour/tailwindfarsi/issues)
-- [Discord](https://discord.gg/tailwindfarsi)
-- [توییتر](https://twitter.com/tailwindfarsi)
-
-## سازندگان
-
-- [محمد عباسپور](https://github.com/ma-abaspour)
-- و همه [مشارکت‌کنندگان](https://github.com/ma-abaspour/tailwindfarsi/graphs/contributors)
