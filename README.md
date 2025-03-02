@@ -1,75 +1,90 @@
-# Nuxt Minimal Starter
+# تیلویند فارسی (Tailwind Farsi)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+کیت رابط کاربری تیلویند برای وب‌سایت‌های فارسی. مجموعه‌ای از کامپوننت‌های آماده و بهینه‌سازی شده برای توسعه رابط‌های کاربری فارسی با Tailwind CSS.
 
-## Setup
+## ویژگی‌ها
 
-Make sure to install dependencies:
+- 🎯 بهینه‌سازی شده برای زبان فارسی
+- 🎨 طراحی زیبا و مدرن
+- ⚡️ سبک و سریع
+- 📱 ریسپانسیو
+- 🌙 پشتیبانی از حالت تاریک
+- 💻 کد تمیز و استاندارد
+- 🔧 قابل شخصی‌سازی
 
+## نصب و راه‌اندازی
+
+1. این مخزن را کلون کنید:
 ```bash
-# npm
+git clone https://github.com/ma-abaspour/tailwindfarsi.git
+cd tailwindfarsi
+```
+
+2. وابستگی‌ها را نصب کنید:
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. پروژه را در حالت توسعه اجرا کنید:
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## پیش‌نیازها
 
-Build the application for production:
+- Node.js نسخه 16 یا بالاتر
+- Nuxt.js 3
+- Tailwind CSS 3
 
-```bash
-# npm
-npm run build
+## ساختار پروژه
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+tailwindfarsi/
+├── components/     # کامپوننت‌های قابل استفاده مجدد
+├── layouts/        # قالب‌های صفحات
+├── pages/          # صفحات پروژه
+├── public/         # فایل‌های استاتیک
+└── assets/         # فایل‌های سبک و تصاویر
 ```
 
-Locally preview production build:
+## نحوه استفاده
 
-```bash
-# npm
-npm run preview
+برای استفاده از کامپوننت‌ها، می‌توانید به مستندات جامع در [وب‌سایت](https://tailwindfarsi.ir/components) مراجعه کنید.
 
-# pnpm
-pnpm preview
+مثال ساده:
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```vue
+<template>
+  <div dir="rtl">
+    <TButton variant="primary">دکمه اصلی</TButton>
+    <TInput 
+      v-model="username"
+      label="نام کاربری"
+      placeholder="نام کاربری خود را وارد کنید"
+    />
+  </div>
+</template>
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## مشارکت
+
+خوشحال می‌شویم در توسعه این پروژه مشارکت کنید! برای مشارکت:
+
+1. یک fork از پروژه ایجاد کنید
+2. تغییرات خود را در یک شاخه جدید اعمال کنید
+3. درخواست pull request ارسال کنید
+
+## مجوز
+
+این پروژه تحت مجوز MIT منتشر شده است.
+
+## پشتیبانی
+
+- [گزارش مشکل](https://github.com/ma-abaspour/tailwindfarsi/issues)
+- [Discord](https://discord.gg/tailwindfarsi)
+- [توییتر](https://twitter.com/tailwindfarsi)
+
+## سازندگان
+
+- [محمد عباسپور](https://github.com/ma-abaspour)
+- و همه [مشارکت‌کنندگان](https://github.com/ma-abaspour/tailwindfarsi/graphs/contributors)
