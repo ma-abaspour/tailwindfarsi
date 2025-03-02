@@ -30,7 +30,6 @@
       <NuxtLink to="/" class="relative flex items-center">
         <span class="mb-4 mr-2 select-none rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-medium text-zinc-50">beta</span>
         <div class="text-sm font-medium text-zinc-950 dark:text-white">تیلویند فارسی</div>
-        <MPLogo class="h-6 w-auto mr-2" />
       </NuxtLink>
     </div>
   </header>
