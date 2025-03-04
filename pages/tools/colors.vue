@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full" dir="rtl">
+  <div class="w-full min-h-[calc(100vh-4rem)]" dir="rtl">
     <h1 class="text-3xl font-bold mb-8">رنگ‌ها</h1>
     
     <div class="space-y-12">

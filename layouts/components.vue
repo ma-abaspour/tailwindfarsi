@@ -81,26 +81,11 @@
         ]">
           <div class="md:sticky md:top-24 p-4 md:p-0">
             <nav class="flex flex-col space-y-6" dir="rtl">
-              <!-- Getting Started Section -->
-              <div class="space-y-3">
-                <h3 class="text-sm font-semibold text-zinc-400 px-3">شروع به کار</h3>
-                <div class="flex flex-col">
-                  <NuxtLink to="/components/installation"
-                    class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
-                    <Icon name="uil:download-alt" class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
-                    <span class="group-hover:text-zinc-100">نصب و راه‌اندازی</span>
-                  </NuxtLink>
-                  <NuxtLink to="/components/usage"
-                    class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
-                    <Icon name="uil:code-branch" class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
-                    <span class="group-hover:text-zinc-100">نحوه استفاده</span>
-                  </NuxtLink>
-                </div>
-              </div>
+
 
               <!-- Components Section -->
               <div class="space-y-3">
-                <h3 class="text-sm font-semibold text-zinc-400 px-3">قطعات رابط کاربری</h3>
+                <NuxtLink to="/components" class="text-sm font-semibold text-zinc-400 px-3">قطعات رابط کاربری</NuxtLink>
                 <div class="flex flex-col">
                   <NuxtLink to="/components/buttons"
                     class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
@@ -109,17 +94,14 @@
                   </NuxtLink>
                   <NuxtLink to="/components/forms"
                     class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
-                    <Icon name="material-symbols:format-list-bulleted-add"
-                      class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
+                    <Icon name="material-symbols:format-list-bulleted-add" class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
                     <span class="group-hover:text-zinc-100">فرم‌ها</span>
                   </NuxtLink>
-                  <NuxtLink to="/components/cards"
-                    class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
+                  <NuxtLink to="/components/cards" class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
                     <Icon name="uil:card-atm" class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
                     <span class="group-hover:text-zinc-100">کارت‌ها</span>
                   </NuxtLink>
-                  <NuxtLink to="/components/navigation"
-                    class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
+                  <NuxtLink to="/components/navigation" class="flex items-center gap-2 py-2 px-3 text-sm text-zinc-400 hover:bg-zinc-800/50 rounded-lg group transition-all duration-200 border-l-2 border-transparent hover:border-zinc-700">
                     <Icon name="tabler:layout-navbar" class="ml-2 text-zinc-500 group-hover:text-zinc-300" />
                     <span class="group-hover:text-zinc-100">ناوبری</span>
                   </NuxtLink>
