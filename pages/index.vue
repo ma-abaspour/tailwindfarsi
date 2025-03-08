@@ -53,10 +53,6 @@
         </div>
       </section>
 
-
-
-
-
       <!-- Goals Section -->
       <div class="max-w-[85rem] px-4   lg:mx-auto">
         <div class="max-w-2xl mx-auto">
@@ -164,3 +160,12 @@
   display: none;
 }
 </style>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'صفحه اصلی',
+  ogTitle: 'صفحه اصلی',
+  description: 'کیت رابط کاربری تیلویند فارسی',
+  ogDescription: 'کیت رابط کاربری تیلویند فارسی',
+})
+</script>
