@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     head: {
       title: 'تیلویند فارسی',
       htmlAttrs: {
-        lang: 'fa',
+        lang: 'pes',
       },
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

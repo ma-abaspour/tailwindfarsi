@@ -165,7 +165,13 @@
 useSeoMeta({
   title: 'صفحه اصلی',
   ogTitle: 'صفحه اصلی',
+  twitterTitle: 'صفحه اصلی',
   description: 'کیت رابط کاربری تیلویند فارسی',
   ogDescription: 'کیت رابط کاربری تیلویند فارسی',
+  twitterDescription: 'کیت رابط کاربری تیلویند فارسی',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: '[twitter:image]',
+  twitterCard: 'کیت رابط کاربری تیلویند فارسی',
+  robots: 'index, follow'
 })
 </script>
