@@ -60,10 +60,3 @@
 
   </div>
 </template>
-
-<script setup>
-// Handle Nuxt error page
-defineProps({
-  error: Object
-})
-</script>

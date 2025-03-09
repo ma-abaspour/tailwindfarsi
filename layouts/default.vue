@@ -24,8 +24,10 @@
           <!-- Desktop Nav -->
           <nav class="hidden items-center space-x-6 md:flex text-zinc-700 dark:text-zinc-300">
             <NuxtLink href="/blog" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">بلاگ</NuxtLink>
+            <NuxtLink href="/tools" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">ابزار ها</NuxtLink>
             <NuxtLink href="/templates" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">قالب ها</NuxtLink>
-            <NuxtLink href="/components" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">قطعات رابط کاربری</NuxtLink>
+            <NuxtLink href="/blocks" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">قطعات</NuxtLink>
+            <NuxtLink href="/components" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">عناصر</NuxtLink>
           </nav>
         </div>
 

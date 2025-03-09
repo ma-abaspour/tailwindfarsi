@@ -15,6 +15,7 @@
     "@nuxt/icon": "^1.10.3",
     "@nuxtjs/seo": "^2.2.0",
     "@nuxtjs/tailwindcss": "^6.12.2",
+    "@wdns/vue-code-block": "^2.3.5",
     "nuxt": "^3.15.0",
     "vue": "latest",
     "vue-router": "latest"

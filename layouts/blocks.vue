@@ -68,7 +68,7 @@
         ]">
           <div class="md:sticky md:top-24 p-4 md:p-0">
             <nav class="flex flex-col space-y-6" dir="rtl">
-              <a v-for="section in sidebarSections" :key="section.title" :href="section.path" class="space-y-3">
+              <div v-for="section in sidebarSections" :key="section.title" class="space-y-3">
                 <h3 class="text-sm font-semibold text-zinc-400 px-3">{{ section.title }}</h3>
                 <div class="flex flex-col">
                   <a v-for="item in section.items"
@@ -79,7 +79,7 @@
                     <span class="group-hover:text-zinc-100">{{ item.title }}</span>
                   </a>
                 </div>
-              </a>
+              </div>
             </nav>
           </div>
         </div>
@@ -107,8 +107,7 @@ const headerNavItems = [
 
 const sidebarSections = [
   {
-    title: 'عناصر رابط کاربری',
-    path: '/components',
+    title: 'قطعات رابط کاربری',
     items: [
       { title: 'دکمه‌ها', path: '/components/buttons', icon: '◻' },
       { title: 'کارت‌ها', path: '/components/cards', icon: '🃏' },
