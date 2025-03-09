@@ -14,7 +14,6 @@
               class="ml-2 p-1 text-zinc-400 hover:text-white md:hidden cursor-pointer" 
               :name="isHeaderMenuOpen ? 'uil:times' : 'heroicons:bars-3'" 
               size="24" />
-            <Icon name="material-symbols:person" class="text-white" />
             <Icon name="material-symbols:dark-mode" class="text-white" />
           </nav>
 
@@ -42,26 +41,34 @@
       <div v-show="isHeaderMenuOpen" 
         class="absolute left-0 right-0 w-full bg-zinc-900 border-b border-zinc-800 md:hidden">
         <nav class="flex flex-col p-4 text-zinc-400" dir="rtl">
-          <NuxtLink to="/blog" 
+          <NuxtLink to="/components" 
             @click="isHeaderMenuOpen = false" 
             class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
-            بلاگ
+            عناصر رابط کاربری
+          </NuxtLink>
+          <NuxtLink to="/blocks" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            قطعات
           </NuxtLink>
           <NuxtLink to="/templates" 
             @click="isHeaderMenuOpen = false" 
             class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
             قالب ها
           </NuxtLink>
-          <NuxtLink to="/components" 
+          <NuxtLink to="/tools" 
             @click="isHeaderMenuOpen = false" 
             class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
-            قطعات رابط کاربری
+            ابزار ها
+          </NuxtLink>
+          <NuxtLink to="/blog" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            بلاگ
           </NuxtLink>
         </nav>
       </div>
     </header>
-
-
 
   <section class="bg-zinc-950 w-full min-h-screen" dir="rtl">
 

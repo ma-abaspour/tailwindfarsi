@@ -21,19 +21,19 @@
             <div class="flex min-h-screen items-center justify-center p-4">
               <div class="fixed inset-0 bg-black/50" @click="showModal1 = false"></div>
               
-              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full">
+              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full" dir="rtl">
                 <div class="flex justify-between items-start mb-4">
-                  <h3 class="text-lg font-semibold">عنوان مودال</h3>
-                  <button @click="showModal1 = false" class="text-zinc-400 hover:text-zinc-200">
+                  <h3 class="text-lg font-semibold text-white">عنوان مودال</h3>
+                  <button @click="showModal1 = false" class="text-white/70 hover:text-white">
                     <Icon name="uil:times" />
                   </button>
                 </div>
                 
                 <div class="mb-6">
-                  <p class="text-zinc-400">این یک مودال پایه است که می‌توانید از آن برای نمایش محتوا استفاده کنید.</p>
+                  <p class="text-white/70">این یک مودال پایه است که می‌توانید از آن برای نمایش محتوا استفاده کنید.</p>
                 </div>
                 
-                <div class="flex justify-end gap-3">
+                <div class="flex justify-start gap-3">
                   <button
                     @click="showModal1 = false"
                     class="px-4 py-2 bg-zinc-800 text-white rounded-lg hover:bg-zinc-700"
@@ -83,19 +83,19 @@
             <div class="flex min-h-screen items-center justify-center p-4">
               <div class="fixed inset-0 bg-black/50" @click="showModal2 = false"></div>
               
-              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full">
+              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full" dir="rtl">
                 <div class="flex items-center gap-4 mb-4">
                   <div class="p-3 rounded-full bg-red-500/10">
                     <Icon name="uil:exclamation-circle" class="text-red-500" size="24"/>
                   </div>
-                  <h3 class="text-lg font-semibold">حذف آیتم</h3>
+                  <h3 class="text-lg font-semibold text-white">حذف آیتم</h3>
                 </div>
                 
                 <div class="mb-6">
-                  <p class="text-zinc-400">آیا از حذف این آیتم اطمینان دارید؟ این عملیات قابل بازگشت نیست.</p>
+                  <p class="text-white/70">آیا از حذف این آیتم اطمینان دارید؟ این عملیات قابل بازگشت نیست.</p>
                 </div>
                 
-                <div class="flex justify-end gap-3">
+                <div class="flex justify-start gap-3">
                   <button
                     @click="showModal2 = false"
                     class="px-4 py-2 bg-zinc-800 text-white rounded-lg hover:bg-zinc-700"
@@ -145,39 +145,39 @@
             <div class="flex min-h-screen items-center justify-center p-4">
               <div class="fixed inset-0 bg-black/50" @click="showModal3 = false"></div>
               
-              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full">
+              <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full" dir="rtl">
                 <div class="flex justify-between items-start mb-6">
-                  <h3 class="text-lg font-semibold">ثبت نام</h3>
-                  <button @click="showModal3 = false" class="text-zinc-400 hover:text-zinc-200">
+                  <h3 class="text-lg font-semibold text-white">ثبت نام</h3>
+                  <button @click="showModal3 = false" class="text-white/70 hover:text-white">
                     <Icon name="uil:times" />
                   </button>
                 </div>
                 
                 <div class="space-y-4 mb-6">
                   <div>
-                    <label class="block text-sm font-medium mb-2">نام کاربری</label>
+                    <label class="block text-sm font-medium text-white mb-2">نام کاربری</label>
                     <input 
                       type="text"
-                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
                     >
                   </div>
                   <div>
-                    <label class="block text-sm font-medium mb-2">ایمیل</label>
+                    <label class="block text-sm font-medium text-white mb-2">ایمیل</label>
                     <input 
                       type="email"
-                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
                     >
                   </div>
                   <div>
-                    <label class="block text-sm font-medium mb-2">رمز عبور</label>
+                    <label class="block text-sm font-medium text-white mb-2">رمز عبور</label>
                     <input 
                       type="password"
-                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none"
+                      class="w-full px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
                     >
                   </div>
                 </div>
                 
-                <div class="flex justify-end gap-3">
+                <div class="flex justify-start gap-3">
                   <button
                     @click="showModal3 = false"
                     class="px-4 py-2 bg-zinc-800 text-white rounded-lg hover:bg-zinc-700"
@@ -232,7 +232,7 @@ const modalBasicCode = `<button @click="showModal = true">نمایش مودال<
     <div class="flex min-h-screen items-center justify-center p-4">
       <div class="fixed inset-0 bg-black/50" @click="showModal = false"></div>
       
-      <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full">
+      <div class="relative bg-zinc-900 rounded-xl p-6 max-w-md w-full" dir="rtl">
         <!-- Modal content -->
       </div>
     </div>

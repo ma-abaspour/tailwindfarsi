@@ -5,7 +5,7 @@
       <p class="text-zinc-400 text-lg leading-relaxed">
         بلوک‌ها ترکیبی از 
         <nuxt-link to="/components" class="text-blue-400 hover:text-blue-300">عناصر پایه</nuxt-link> 
-        هستن که با هم یه بخش کامل از رابط کاربری رو می‌سازن. مثل هدر، فوتر، کارت‌ها و غیره.
+        هستن که با هم یه بخش کامل از رابط کاربری رو می‌سازن.
       </p>
     </div>
 

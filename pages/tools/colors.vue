@@ -77,6 +77,6 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'components'
+  layout: 'tools'
 })
 </script>

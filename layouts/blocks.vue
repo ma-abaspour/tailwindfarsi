@@ -5,45 +5,69 @@
       <span>🎉 نسخه بتا تیلویند فارسی منتشر شد!</span>
     </div>
 
+
     <!-- Navigation -->
     <header class="sticky top-0 z-20 bg-white border-zinc-200 border-b dark:border-white/10 dark:bg-zinc-950 py-2 w-full">
       <div class="px-4 md:px-6 mx-auto flex items-center justify-between md:max-w-7xl">
         <!-- Navigation Left -->
         <div class="flex items-center space-x-6">
-          <button @click="isHeaderMenuOpen = !isHeaderMenuOpen" 
-            class="ml-2 p-1 text-zinc-400 hover:text-white md:hidden cursor-pointer">
-            ☰
-          </button>
+          <nav class="flex items-center gap-4">
+            <Icon @click="isHeaderMenuOpen = !isHeaderMenuOpen" 
+              class="ml-2 p-1 text-zinc-400 hover:text-white md:hidden cursor-pointer" 
+              :name="isHeaderMenuOpen ? 'uil:times' : 'heroicons:bars-3'" 
+              size="24" />
+            <Icon name="material-symbols:dark-mode" class="text-white" />
+          </nav>
+
+          <!-- Vertical Line -->
+          <div class="hidden h-8 w-[0.5px] bg-zinc-200 dark:bg-zinc-800 sm:flex" />
 
           <!-- Desktop Nav -->
           <nav class="hidden items-center space-x-6 md:flex text-zinc-700 dark:text-zinc-300">
-            <a v-for="item in headerNavItems" 
-               :key="item.path"
-               :href="item.path"
-               class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">
-              {{ item.title }}
-            </a>
+            <NuxtLink href="/blog" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">بلاگ</NuxtLink>
+            <NuxtLink href="/tools" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">ابزار ها</NuxtLink>
+            <NuxtLink href="/templates" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">قالب ها</NuxtLink>
+            <NuxtLink href="/blocks" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">قطعات</NuxtLink>
+            <NuxtLink href="/components" class="text-sm font-medium hover:text-zinc-950 dark:hover:text-white">عناصر</NuxtLink>
           </nav>
         </div>
 
         <!-- Navigation Right -->
-        <a href="/" class="relative flex items-center">
+        <NuxtLink to="/" class="relative flex items-center">
           <span class="mb-4 mr-2 select-none rounded bg-zinc-800 px-1.5 py-0.5 text-[10px] font-medium text-zinc-50">beta</span>
           <div class="text-sm font-medium text-zinc-950 dark:text-white">تیلویند فارسی</div>
-        </a>
+        </NuxtLink>
       </div>
 
       <!-- Mobile Navigation Menu -->
       <div v-show="isHeaderMenuOpen" 
         class="absolute left-0 right-0 w-full bg-zinc-900 border-b border-zinc-800 md:hidden">
         <nav class="flex flex-col p-4 text-zinc-400" dir="rtl">
-          <a v-for="item in headerNavItems"
-             :key="item.path"
-             :href="item.path"
-             @click="isHeaderMenuOpen = false"
-             class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
-            {{ item.title }}
-          </a>
+          <NuxtLink to="/components" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            عناصر رابط کاربری
+          </NuxtLink>
+          <NuxtLink to="/blocks" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            قطعات
+          </NuxtLink>
+          <NuxtLink to="/templates" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            قالب ها
+          </NuxtLink>
+          <NuxtLink to="/tools" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            ابزار ها
+          </NuxtLink>
+          <NuxtLink to="/blog" 
+            @click="isHeaderMenuOpen = false" 
+            class="py-2 px-4 text-sm hover:bg-zinc-800/50 rounded-lg hover:text-white transition-colors">
+            بلاگ
+          </NuxtLink>
         </nav>
       </div>
     </header>
@@ -68,7 +92,7 @@
         ]">
           <div class="md:sticky md:top-24 p-4 md:p-0">
             <nav class="flex flex-col space-y-6" dir="rtl">
-              <div v-for="section in sidebarSections" :key="section.title" class="space-y-3">
+              <a v-for="section in sidebarSections" :key="section.title" :href="section.path" class="space-y-3">
                 <h3 class="text-sm font-semibold text-zinc-400 px-3">{{ section.title }}</h3>
                 <div class="flex flex-col">
                   <a v-for="item in section.items"
@@ -79,7 +103,7 @@
                     <span class="group-hover:text-zinc-100">{{ item.title }}</span>
                   </a>
                 </div>
-              </div>
+              </a>
             </nav>
           </div>
         </div>
@@ -108,34 +132,17 @@ const headerNavItems = [
 const sidebarSections = [
   {
     title: 'قطعات رابط کاربری',
+    path: '/blocks',
     items: [
-      { title: 'دکمه‌ها', path: '/components/buttons', icon: '◻' },
-      { title: 'کارت‌ها', path: '/components/cards', icon: '🃏' },
-      { title: 'فرم‌ها', path: '/components/forms', icon: '📝' },
-      { title: 'هشدارها', path: '/components/alert', icon: '⚠' },
-      { title: 'آواتارها', path: '/components/avatar', icon: '👤' },
-      { title: 'منوهای کشویی', path: '/components/dropdown', icon: '▼' },
-      { title: 'نشان‌ها', path: '/components/badge', icon: '🏷' },
-      { title: 'آکاردئون', path: '/components/accordion', icon: '▼' },
-      { title: 'جستجو', path: '/components/search', icon: '🔍' },
-      { title: 'دیالوگ', path: '/components/dialog', icon: '🗣️' },
-      { title: 'نوار پیشرفت', path: '/components/progress-bar', icon: '️⌛' },
+      { title: 'لندینگ', path: '/blocks/hero', icon: '🏠' },
+      { title: 'فرم', path: '/blocks/forms', icon: '📝' },
+      { title: 'پرداخت', path: '/blocks/payment', icon: '💵' },
+      { title: 'ورود', path: '/blocks/login', icon: '🚪' },
+      { title: 'قیمت', path: '/blocks/pricing', icon: '💲' },
+      { title: 'فراخوان', path: '/blocks/cta', icon: '🫴' },
+      { title: 'تایید اجتماعی', path: '/blocks/social-proof', icon: '🧾' },
     ]
   },
-  {
-    title: 'ابزارها',
-    items: [
-      { title: 'رنگ‌ها', path: '/tools/colors', icon: '🎨' },
-      { title: 'تایپوگرافی', path: '/tools/typography', icon: 'T' }
-    ]
-  },
-  {
-    title: 'بلوک ها',
-    items: [
-      { title: 'رنگ‌ها', path: '/tools/colors', icon: '🎨' },
-      { title: 'تایپوگرافی', path: '/tools/typography', icon: 'T' }
-    ]
-  }
 ]
 
 onMounted(() => {
