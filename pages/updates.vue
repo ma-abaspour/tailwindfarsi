@@ -35,3 +35,18 @@
     </div>
   </section>
 </template>
+
+<script setup>
+useSeoMeta({
+  title: 'به ‌روزرسانی‌ های تیلویند فارسی',
+  ogTitle: 'به ‌روزرسانی‌ های تیلویند فارسی',
+  twitterTitle: 'به ‌روزرسانی‌ های تیلویند فارسی',
+  description: 'جدیدترین به‌روزرسانی‌ها، ویژگی‌ها و تغییرات کیت رابط کاربری تیلویند فارسی',
+  ogDescription: 'جدیدترین به‌روزرسانی‌ها، ویژگی‌ها و تغییرات کیت رابط کاربری تیلویند فارسی',
+  twitterDescription: 'جدیدترین به‌روزرسانی‌ها، ویژگی‌ها و تغییرات کیت رابط کاربری تیلویند فارسی',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
+</script>

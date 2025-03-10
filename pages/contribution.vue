@@ -100,3 +100,18 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useSeoMeta({
+  title: 'همکاری و مشارکت در تیلویند فارسی از طریق گیت‌هاب',
+  ogTitle: 'همکاری و مشارکت در تیلویند فارسی از طریق گیت‌هاب',
+  twitterTitle: 'همکاری و مشارکت در تیلویند فارسی از طریق گیت‌هاب',
+  description: 'راهنمای مشارکت و همکاری در توسعه کیت رابط کاربری تیلویند فارسی از طریق گیت‌هاب',
+  ogDescription: 'راهنمای مشارکت و همکاری در توسعه کیت رابط کاربری تیلویند فارسی از طریق گیت‌هاب',
+  twitterDescription: 'راهنمای مشارکت و همکاری در توسعه کیت رابط کاربری تیلویند فارسی از طریق گیت‌هاب',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
+</script>

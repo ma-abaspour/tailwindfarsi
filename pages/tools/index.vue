@@ -42,4 +42,17 @@
 definePageMeta({
   layout: 'tools'
 })
+
+useSeoMeta({
+  title: 'ابزارهای توسعه تیلویند فارسی',
+  ogTitle: 'ابزارهای توسعه تیلویند فارسی',
+  twitterTitle: 'ابزارهای توسعه تیلویند فارسی',
+  description: 'ابزارها و منابع مفید برای توسعه و طراحی رابط کاربری با تیلویند فارسی',
+  ogDescription: 'ابزارها و منابع مفید برای توسعه و طراحی رابط کاربری با تیلویند فارسی',
+  twitterDescription: 'ابزارها و منابع مفید برای توسعه و طراحی رابط کاربری با تیلویند فارسی',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
 </script>

@@ -125,6 +125,21 @@
 </template>
 
 <script setup lang="ts">
+useSeoMeta({
+  title: 'قالب‌های تیلویند فارسی',
+  ogTitle: 'قالب‌های تیلویند فارسی',
+  twitterTitle: 'قالب‌های تیلویند فارسی',
+  description: 'قالب‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  ogDescription: 'قالب‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  twitterDescription: 'قالب‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
+
+
+
 import { ref, onMounted } from 'vue'
 import { useGithubStats } from '~/composables/useGithubStats'
 import { useTextUtils } from '~/composables/useTextUtils'

@@ -43,4 +43,18 @@
 definePageMeta({
   layout: 'blocks'
 })
+
+useSeoMeta({
+  title: 'بلوک‌های تیلویند فارسی',
+  ogTitle: 'بلوک‌های تیلویند فارسی',
+  twitterTitle: 'بلوک‌های تیلویند فارسی',
+  description: 'بلوک‌های آماده و راست‌چین شده تیلویند فارسی برای ساخت رابط کاربری',
+  ogDescription: 'بلوک‌های آماده و راست‌چین شده تیلویند فارسی برای ساخت رابط کاربری',
+  twitterDescription: 'بلوک‌های آماده و راست‌چین شده تیلویند فارسی برای ساخت رابط کاربری',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
 </script>
+

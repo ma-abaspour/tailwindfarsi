@@ -1,14 +1,22 @@
 <script setup>
-useHead({
-  title: 'اهداف - تیلویند فارسی',
-  meta: [
-    { name: 'description', content: 'اهداف و چشم‌انداز پروژه تیلویند فارسی' }
-  ]
+
+useSeoMeta({
+  title: 'مرامنامه تیلویند فارسی',
+  ogTitle: 'مرامنامه تیلویند فارسی',
+  twitterTitle: 'مرامنامه تیلویند فارسی',
+  description: 'اهداف و چشم‌انداز پروژه تیلویند فارسی',
+  ogDescription: 'اهداف و چشم‌انداز پروژه تیلویند فارسی',
+  twitterDescription: 'اهداف و چشم‌انداز پروژه تیلویند فارسی',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
 })
 
 definePageMeta({
   layout: false
 })
+
 </script>
 
 <template>

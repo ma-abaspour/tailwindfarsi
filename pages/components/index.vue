@@ -61,4 +61,17 @@
 definePageMeta({
   layout: 'components'
 })
+
+useSeoMeta({
+  title: 'کامپوننت‌های تیلویند فارسی',
+  ogTitle: 'کامپوننت‌های تیلویند فارسی',
+  twitterTitle: 'کامپوننت‌های تیلویند فارسی',
+  description: 'مجموعه کامپوننت‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  ogDescription: 'مجموعه کامپوننت‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  twitterDescription: 'مجموعه کامپوننت‌های آماده و راست‌چین شده تیلویند فارسی برای طراحی رابط کاربری',
+  ogImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterImage: 'https://tailwindfarsi.com/tailwind.png',
+  twitterCard: 'summary',
+  robots: 'index, follow'
+});
 </script>
