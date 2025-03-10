@@ -298,10 +298,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'صفحه اصلی',
-  ogTitle: 'صفحه اصلی',
-  twitterTitle: 'صفحه اصلی',
-  description: 'کیت رابط کاربری تیلویند فارسی',
+  title: 'کیت رابط کاربری تیلویند فارسی',
+  ogTitle: 'کیت رابط کاربری تیلویند فارسی',
+  twitterTitle: 'کیت رابط کاربری تیلویند فارسی',
+  description: 'عناصر، قطعات و قالب های راست چین شده تیلویند (Tailwind CSS) برای طراحی رابط کاربری',
   ogDescription: 'کیت رابط کاربری تیلویند فارسی',
   twitterDescription: 'کیت رابط کاربری تیلویند فارسی',
   ogImage: 'https://tailwindfarsi.com/tailwind.png',
