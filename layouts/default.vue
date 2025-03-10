@@ -59,10 +59,10 @@
 
     <!-- Footer -->
     <footer class="border-t border-zinc-800 py-12" dir="ltr">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-4 md:max-w-7xl">
         <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div class="text-center md:text-left">
-            <div class="mb-2 text-xl font-bold text-white">TailwindFarsi</div>
+            <div class="mb-2 text-xl font-bold text-white">Tailwind Farsi</div>
             <p class="text-zinc-400">Built by <a href="https://symmetry.team" class="text-sky-600 hover:text-sky-500">Symmetry Engineering Firm</a></p>
           </div>
           <a href="https://github.com/ma-abaspour/tailwindfarsi" 

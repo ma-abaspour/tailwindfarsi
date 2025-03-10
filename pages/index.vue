@@ -15,8 +15,14 @@
           کلیک کنید.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-3">
-          <NuxtLink to="/components" class="btn-primary">عناصر رابط کاربری</NuxtLink>
-          <NuxtLink to="/contribution" class="btn-secondary">مشارکت</NuxtLink>
+          <NuxtLink to="/components" 
+            class="rounded-lg bg-blue-600 px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-blue-700 sm:text-sm">
+            عناصر رابط کاربری
+          </NuxtLink>
+          <NuxtLink to="/contribution" 
+            class="rounded-lg border border-zinc-700 px-4 py-2 text-xs font-medium text-zinc-300 transition-colors hover:bg-zinc-900 sm:text-sm">
+            مشارکت
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -26,7 +32,7 @@
       <div class="mx-auto flex max-w-3xl flex-col items-center justify-center sm:text-right">
         <p class="inline-flex flex-wrap items-center gap-1 text-xs text-zinc-300 sm:text-base">
           برای حمایت تو 
-          <a href="https://github.com/ma-abaspour/tailwindfarsi" target="_blank" class="link">گیت‌هاب</a>
+          <a href="https://github.com/ma-abaspour/tailwindfarsi" target="_blank" class="text-blue-400 transition-colors hover:text-blue-500">گیت‌هاب</a>
           ستاره بدین ⭐ و تو 
           <a href="https://t.me/ma_abaspour" target="_blank" class="link">کانال تلگرامم</a>
           جوین شین. مرسیی! 💗
@@ -44,7 +50,7 @@
             <!-- Benefits items -->
             <template v-for="benefit in ['بدون نصب', 'بدون تنظیمات', 'بدون راه‌اندازی']" :key="benefit">
               <div class="group flex items-center gap-2">
-                <span class="benefit-icon">
+                <span class="flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-green-500/20 to-green-500/5 transition-transform duration-300 group-hover:scale-110">
                   <icon name="uil:check" class="h-3 w-3 text-green-500" />
                 </span>
                 <span class="text-zinc-300 transition-colors group-hover:text-zinc-100">{{ benefit }}</span>
@@ -67,7 +73,7 @@
     <!-- Mission Statement Section -->
     <section class="mt-10 px-4">
       <div class="mx-auto max-w-3xl">
-        <div class="section-card">
+        <div class="rounded-2xl bg-gradient-to-r from-zinc-900/50 via-zinc-800/30 to-zinc-900/50 p-6">
           <h2 class="mb-4 text-xl font-medium text-zinc-100 sm:text-2xl">چرا تیلویند فارسی؟</h2>
           <div class="space-y-4 text-sm sm:text-base">
             <p class="text-zinc-300">
@@ -115,7 +121,6 @@
           <div class="flex flex-wrap gap-8">
             <a href="https://symmetry.team" 
                target="_blank" 
-               data-tooltip="هزینه های هاست و توسعه رو پوشش میدهد."
                class="group flex flex-col items-center">
               <img src="https://avatars.githubusercontent.com/u/17098?v=4" 
                    alt="Symmetry" 
@@ -151,7 +156,7 @@
     <section class="my-16 px-4">
       <div class="mx-auto max-w-3xl">
         
-        <div class="section-card">
+        <div class="rounded-2xl bg-gradient-to-r from-zinc-900/50 via-zinc-800/30 to-zinc-900/50 p-6">
           <p class="mb-6 text-sm text-zinc-300 sm:text-base">
             من به عنوان توسعه‌دهنده فول‌استک با تجربه کار در پروژه‌های مختلف، آماده همکاری در پروژه‌های شما هستم. تخصص اصلی من:
           </p>
@@ -226,65 +231,6 @@
 
   </div>
 </template>
-
-<style>
-.btn-primary {
-  @apply rounded-lg bg-blue-600 px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-blue-700 sm:text-sm;
-}
-
-.btn-secondary {
-  @apply rounded-lg border border-zinc-700 px-4 py-2 text-xs font-medium text-zinc-300 transition-colors hover:bg-zinc-900 sm:text-sm;
-}
-
-.link {
-  @apply text-blue-400 transition-colors hover:text-blue-500;
-}
-
-.benefit-icon {
-  @apply flex h-5 w-5 items-center justify-center rounded-full bg-gradient-to-br from-green-500/20 to-green-500/5 transition-transform duration-300 group-hover:scale-110;
-}
-
-.section-card {
-  @apply rounded-2xl bg-gradient-to-r from-zinc-900/50 via-zinc-800/30 to-zinc-900/50 p-6;
-}
-
-/* Existing tooltip styles */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Add tooltip styling */
-[data-tooltip] {
-  position: relative;
-}
-
-[data-tooltip]::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.5rem 1rem;
-  background: rgba(24, 24, 27, 0.9);
-  color: #fff;
-  border-radius: 0.5rem;
-  font-size: 0.875rem;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s ease;
-  margin-bottom: 0.5rem;
-  border: 1px solid rgba(82, 82, 91, 0.3);
-}
-
-[data-tooltip]:hover::after {
-  opacity: 1;
-}
-</style>
 
 <script setup lang="ts">
 useSeoMeta({
