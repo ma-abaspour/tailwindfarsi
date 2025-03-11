@@ -3,10 +3,10 @@
     <!-- Hero section -->
     <section class="pt-16 sm:pt-20">
       <div class="mx-auto flex max-w-2xl flex-col items-center justify-center gap-4">
-        <h1 class="text-2xl font-medium text-zinc-50 sm:text-4xl">
+        <h1 class="text-center text-xl font-medium text-zinc-50 sm:text-4xl">
           کیت رابط کاربری تیلویند فارسی
         </h1>
-        <p class="text-xs text-zinc-200 sm:text-base">
+        <p class="text-center text-xs text-zinc-200 sm:text-base">
           کامپوننت ها و قالب های تیلویند راست چین و فارسی بصورت رایگان و اوپن سورس
         </p>
         <p class="text-xs text-zinc-400 sm:text-sm">
@@ -29,13 +29,13 @@
 
     <!-- Support Me Section -->
     <section class="mt-8">
-      <div class="mx-auto flex max-w-3xl flex-col items-center justify-center sm:text-right">
-        <p class="inline-flex flex-wrap items-center gap-1 text-xs text-zinc-300 sm:text-base">
+      <div class="mx-auto max-w-3xl">
+        <p class="text-center text-xs text-zinc-300 sm:text-base">
           برای حمایت تو 
           <a href="https://github.com/ma-abaspour/tailwindfarsi" target="_blank" class="text-blue-400 transition-colors hover:text-blue-500">گیت‌هاب</a>
           ستاره بدین ⭐ و تو 
-          <a href="https://t.me/ma_abaspour" target="_blank" class="link">کانال تلگرامم</a>
-          جوین شین. مرسیی! 💗
+          <a href="https://t.me/ma_abaspour" target="_blank" class="link">چنل تلگرامم</a>
+          جوین شین. مرسیی!💗
         </p>
       </div>
     </section>
